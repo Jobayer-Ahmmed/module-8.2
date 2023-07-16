@@ -52,6 +52,9 @@ header h1{
 .photo{
     width: 400px;
     height: 500px;
+    border: 3px solid seagreen;
+    position: relative;
+
 
 
 }
@@ -71,6 +74,16 @@ header h1{
 }
 
 
+.photo .para{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: top right;
+ 
+}
+
+
 /* footer start */
 footer{
     padding-top: 120px;
@@ -83,6 +96,7 @@ footer p{
     font-family: Montserrat;
     font-weight: 500;
 }
+
 
 
 
