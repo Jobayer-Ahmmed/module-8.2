@@ -43,14 +43,46 @@ header h1{
 .gallary_up, .gallary_down{
     display: flex;
     justify-content: space-between;
+
 }
 .gallary_up{
     margin-top: 90px;
+    gap: 10px;
 }
 .photo{
     width: 400px;
     height: 500px;
+
+
+}
+.photo_2 img{
+    margin-top: 80px;
 }
 .photo img{
-    width:70%;
+
+    width: 80%;
+
 }
+.photo h4{
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* footer start */
+footer{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+footer p{
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+
+
