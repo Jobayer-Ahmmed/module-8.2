@@ -3,14 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding-left: 10%;
+    padding-right: 12%;
+}
 
 header{
     display: flex;
     justify-content: space-between;
-    padding-top:110px;
-    padding-left: 230px;
-    padding-right: 260px;
-    
+    padding-top:110px;  
     
 }
 .title{
@@ -38,58 +39,50 @@ header h1{
 
 /* start gallary */
 .gallary{
+    width: 100%;
     margin-top: 100px;
-    padding: 0 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 5rem;
+}
+.photo_2, .photo_5{
+    transform: translateY(100px);
+}
+.photo{
+    width: 100%;
+    position: relative;
+
 }
 
-.photo{
-    width: 350px;
-    height: 450px;
-    position: relative;
-    margin-bottom: 40px;
-}
-.photo_2 img{
-    margin-top: 80px;
-}
+
 .photo img{
 
-    width: 250px;
+    width: 100%;
 
 }
 .photo h4{
-    margin-top: 10px;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
 }
 
-
-.photo .para{
-    position: absolute;
-    top: 100px;
-    right: 80px;
-    transform: rotate(90deg);
-    transform-origin: top right;
- 
-}
-.photo_2 .para{
-    top: 180px;
-
-}
-.para p{
+ .photo p{
     font-family: PT Serif;
     font-size: 12px;
     text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    transform-origin: top right;
+    transform: rotate(90deg);
+
+    
 }
 
 
 /* footer start */
 footer{
-    padding-top: 120px;
+    padding-top: 300px;
     padding-bottom: 30px;
 }
 
@@ -116,18 +109,27 @@ footer p{
         padding-bottom: 10px;
     }
     .gallary{
-        padding: 0;
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
         
     }
-
     .photo{
-        width: 200px;
-        height: 300px;
-        
+        width: 100%;
+    }
+    .photo_2{
+        transform: translate(0);
+    }
+    .photo_2, .photo_4, .photo_6{
+        transform: translateY(100px);
+    }
+    .photo_5{
+        transform: translateY(0);
     }
     .photo img{
-        width: 140px;
+        width: 100%;
     }
+
  }
 
 
